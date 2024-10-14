@@ -36,9 +36,9 @@
     {/each}
   </div>
 
-  <div class="join flex justify-center w-full">
+  <div class="justify-center flex flex-wrap gap-2">
     {#each files as file, i}
-      <a href="#item{i + 1}" class="join-item btn btn-xs">{i + 1}</a>
+      <a href="#item{i + 1}" class="btn btn-xs">{i + 1}</a>
     {/each}
   </div>
 </div>
