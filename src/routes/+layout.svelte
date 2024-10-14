@@ -27,14 +27,11 @@
           </svg>
         </div>
         <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-        <ul
-          tabindex="0"
-          class="menu-dropdown menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-        >
+        <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] w-80 shadow">
           <li><a href="/akwarela">Akwarela</a></li>
           <li>
             <summary>Kaligrafia</summary>
-            <ul class="p-2">
+            <ul>
               <li>
                 <h2 class="menu-title">A. Mickiewicz</h2>
                 <ul>
@@ -50,7 +47,7 @@
                   <li><a href="/kaligrafia/sonnets">Sonnets</a></li>
                 </ul>
               </li>
-              <li><a href="/nowy-testament">Pismo Święte Nowego Testamentu</a></li>
+              <li><a href="/kaligrafia/nowy-testament">Pismo Święte Nowego Testamentu</a></li>
             </ul>
           </li>
           <li><a href="/kontakt">Kontakt</a></li>
@@ -70,7 +67,7 @@
       </a>
     </div>
     <div class="navbar-center lg:flex">
-      <ul class="menu menu-horizontal">
+      <ul class="menu menu-horizontal max-lg:hidden">
         <li><a href="/akwarela">Akwarela</a></li>
         <li class="dropdown dropdown-hover">
           <div tabindex="0" role="button">Kaligrafia</div>

@@ -19,6 +19,10 @@ export const load = ({ url }) => {
       '/img_a/w104.webp'
     ];
   }
+  else if (pathname === "/kaligrafia/as-you-like-it") { title = "As You Like It"; }
+  else if (pathname === "/kaligrafia/sonnets") { title = "Sonnets"; }
+  else if (pathname === "/kaligrafia/tryptyk") { title = "Tryptyk"; }
+  else if (pathname === "/kaligrafia/nowy-testament") { title = "Pismo Święte Nowego Testamentu"; }
 
   return {
     pathname,
