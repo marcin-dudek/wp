@@ -3,8 +3,6 @@
   import { fly } from 'svelte/transition';
   import { cubicIn, cubicOut } from 'svelte/easing';
 
-  let dropdownopen = false;
-
   export let data;
 </script>
 
@@ -36,7 +34,7 @@
           <li><a href="/akwarela">Akwarela</a></li>
           <li>
             <summary>Kaligrafia</summary>
-            <ul class="p-2 dropdown-hover">
+            <ul class="p-2">
               <li>
                 <h2 class="menu-title">A. Mickiewicz</h2>
                 <ul>
@@ -60,7 +58,7 @@
       </div>
       <a class="btn btn-ghost" href="/">
         <img
-          src="./favicon-48x48.png"
+          src="/favicon-48x48.png"
           width="46"
           height="46"
           class="h-full"
@@ -68,34 +66,33 @@
         />
         <div>
           <p class="text-2xl gap-0 leading-5 text-bold">Wojciech Patro</p>
-        </div></a
-      >
+        </div>
+      </a>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
+    <div class="navbar-center lg:flex">
+      <ul class="menu menu-horizontal">
         <li><a href="/akwarela">Akwarela</a></li>
-        <li>
-          <details>
-            <summary>Kaligrafia</summary>
-            <ul class="p-2 w-80">
-              <li>
-                <h2 class="menu-title">A. Mickiewicz</h2>
-                <ul>
-                  <li><a href="/kaligrafia/pan-tadeusz">Pan Tadeusz</a></li>
-                  <li><a href="/kaligrafia/pan-tadeusz-2">Pan Tadeusz (wersja 2)</a></li>
-                </ul>
-              </li>
-              <li>
-                <h2 class="menu-title">W. Shakespeare</h2>
-                <ul>
-                  <li><a href="/kaligrafia/as-you-like-it">As You Like It</a></li>
-                  <li><a href="/kaligrafia/tryptyk">Tryptyk</a></li>
-                  <li><a href="/kaligrafia/sonnets">Sonnets</a></li>
-                </ul>
-              </li>
-              <li><a href="/kaligrafia/nowy-testament">Pismo Święte Nowego Testamentu</a></li>
-            </ul>
-          </details>
+        <li class="dropdown dropdown-hover">
+          <div tabindex="0" role="button">Kaligrafia</div>
+          <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+          <ul tabindex="0" class="dropdown-content menu bg-base-300 rounded-box z-[1] shadow w-80">
+            <li>
+              <h2 class="menu-title">A. Mickiewicz</h2>
+              <ul>
+                <li><a href="/kaligrafia/pan-tadeusz">Pan Tadeusz</a></li>
+                <li><a href="/kaligrafia/pan-tadeusz-2">Pan Tadeusz (wersja 2)</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="menu-title">W. Shakespeare</h2>
+              <ul>
+                <li><a href="/kaligrafia/as-you-like-it">As You Like It</a></li>
+                <li><a href="/kaligrafia/tryptyk">Tryptyk</a></li>
+                <li><a href="/kaligrafia/sonnets">Sonnets</a></li>
+              </ul>
+            </li>
+            <li><a href="/kaligrafia/nowy-testament">Pismo Święte Nowego Testamentu</a></li>
+          </ul>
         </li>
         <li><a href="/kontakt">Kontakt</a></li>
       </ul>
@@ -116,7 +113,6 @@
   <footer class="text-center p-4 mt-8">
     <p>
       Copyright &copy; 2024 <a href="https://magickwings.com">Magick Wings</a>. All rights reserved.
-      <a href="/privacy-policy">Privacy Policy</a>
     </p>
   </footer>
 </div>

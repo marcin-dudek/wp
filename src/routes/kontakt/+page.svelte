@@ -9,7 +9,6 @@
   let inputs = {
     name: '',
     email: '',
-    phone: '',
     content: '',
     username: '',
     lastName: ''
@@ -69,7 +68,6 @@
     inputs = {
       name: '',
       email: '',
-      phone: '',
       content: '',
       username: '',
       lastName: ''
@@ -103,11 +101,8 @@
 </svelte:head>
 
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-  <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Contact Us</h3>
-  <p class="mb-8 lg:mb-16">
-    Got a question? What to get more information about us? Need any special training needs. Let us
-    know.
-  </p>
+  <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Kontakt</h3>
+  <p class="mb-8 lg:mb-16">Masz pytanie? Chcesz uzyskać więcej informacji o nas? Napisz?</p>
   <form action="#" class="space-y-8">
     <div>
       <label
@@ -140,25 +135,7 @@
             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
           /></svg
         >
-        <input type="text" class="grow" placeholder="Name" bind:value={inputs.name} />
-      </label>
-    </div>
-    <div>
-      <label class="input input-bordered flex items-center gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="w-4 h-4 opacity-70"
-          ><path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-          /><path d="M14.05 2a9 9 0 0 1 8 7.94" /><path d="M14.05 6A5 5 0 0 1 18 10" /></svg
-        >
-        <input type="phone" class="grow" placeholder="Phone" bind:value={inputs.phone} />
+        <input type="text" class="grow" placeholder="Imię" bind:value={inputs.name} />
       </label>
     </div>
     <div class="sm:col-span-2">
@@ -167,7 +144,7 @@
         rows="6"
         maxlength="10000"
         class="textarea textarea-bordered w-full"
-        placeholder="Ask us question..."
+        placeholder="Pytanie ..."
         bind:value={inputs.content}
       ></textarea>
     </div>
@@ -204,7 +181,7 @@
       tabindex="-1"
       on:click={() => console.log('honeypot')}>Send</button
     >
-    <button class="btn btn-primary py-3" on:click={contactMe}>Send message</button>
+    <button class="btn btn-primary py-3" on:click={contactMe}>Wyślij</button>
   </form>
 </div>
 
