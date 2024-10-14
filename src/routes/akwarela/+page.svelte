@@ -21,20 +21,24 @@
   ];
 </script>
 
-<div class="carousel carousel-center rounded-box">
-  {#each files as file, i}
-    <div id="item{i + 1}" class="carousel-item w-full">
-      {#if i == 0}
-        <img class="mx-auto" src={file} alt="akwarela nr {i}" />
-      {:else}
-        <img class="mx-auto" loading="lazy" src={file} alt="akwarela nr {i}" />
-      {/if}
-    </div>
-  {/each}
-</div>
+<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+  <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Akwarela</h3>
 
-<div class="join flex justify-center w-full">
-  {#each files as file, i}
-    <a href="#item{i + 1}" class="join-item btn btn-xs">{i + 1}</a>
-  {/each}
+  <div class="carousel carousel-center rounded-box">
+    {#each files as file, i}
+      <div id="item{i + 1}" class="carousel-item w-full">
+        {#if i == 0}
+          <img class="mx-auto" src={file} alt="akwarela nr {i}" />
+        {:else}
+          <img class="mx-auto" loading="lazy" src={file} alt="akwarela nr {i}" />
+        {/if}
+      </div>
+    {/each}
+  </div>
+
+  <div class="join flex justify-center w-full">
+    {#each files as file, i}
+      <a href="#item{i + 1}" class="join-item btn btn-xs">{i + 1}</a>
+    {/each}
+  </div>
 </div>
