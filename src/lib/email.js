@@ -20,7 +20,7 @@ const sendEmail = async (name, mail, content) => {
     'https://api.brevo.com/v3/smtp/email',
     {
       sender: {
-        name: 'wojciechpatro.eu'
+        email: 'kontakt@wojciechpatro.eu'
       },
       to: [{ email: "wojtek.patro@gmail.com" }],
       replyTo: { email: mail },

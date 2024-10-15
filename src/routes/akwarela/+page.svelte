@@ -44,10 +44,9 @@
     {#each files as file, i}
       <a
         href="#{i + 1}"
-        class="btn btn-xs {image === '#' + (i + 1).toString() || (image === '' && i === 0)
-          ? 'btn-active'
-          : ''}">{i + 1}</a
-      >
+        class="btn btn-xs {image === `#${i + 1}` || (image === '' && i === 0) ? 'btn-active' : ''}"
+        >{i + 1}
+      </a>
     {/each}
   </div>
 </div>
