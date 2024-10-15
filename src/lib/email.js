@@ -24,7 +24,7 @@ const sendEmail = async (name, mail, content) => {
       },
       to: [{ email: "wojtek.patro@gmail.com" }],
       replyTo: { email: mail },
-      subject: 'Wojciech Patro - kontact',
+      subject: 'Wojciech Patro - kontakt',
       htmlContent: html
     },
     {
