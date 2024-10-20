@@ -6,16 +6,31 @@ export const load = ({ url }) => {
   if (pathname === "/kaligrafia/pan-tadeusz-2") {
     title = "Pan Tadeusz";
     images = [
-      '/akwarela/w106.webp',
-      '/akwarela/w107.webp',
-      '/akwarela/w108.webp'
+      '/pan-tadeusz-2/pt01.webp',
+      '/pan-tadeusz-2/pt02.webp',
+      '/pan-tadeusz-2/pt03.webp',
+      '/pan-tadeusz-2/pt04.webp',
+      '/pan-tadeusz-2/pt05.webp',
+      '/pan-tadeusz-2/pt06.webp',
+      '/pan-tadeusz-2/pt07.webp',
+      '/pan-tadeusz-2/pt08.webp',
+      '/pan-tadeusz-2/pt09.webp',
+      '/pan-tadeusz-2/pt10.webp',
+      '/pan-tadeusz-2/pt11.webp',
+      '/pan-tadeusz-2/pt12.webp',
     ];
   } else if (pathname === "/kaligrafia/pan-tadeusz") {
     title = "Pan Tadeusz";
     images = [
-      '/akwarela/w109.webp',
-      '/akwarela/w103.webp',
-      '/akwarela/w108.webp'
+      '/pan-tadeusz-1/pt1.webp',
+      '/pan-tadeusz-1/pt2.webp',
+      '/pan-tadeusz-1/pt3.webp',
+      '/pan-tadeusz-1/pt4.webp',
+      '/pan-tadeusz-1/pt5.webp',
+      '/pan-tadeusz-1/pt6.webp',
+      '/pan-tadeusz-1/pt7.webp',
+      '/pan-tadeusz-1/pt8.webp',
+      '/pan-tadeusz-1/pt9.webp',
     ];
   }
   else if (pathname === "/kaligrafia/as-you-like-it") { title = "As You Like It"; }

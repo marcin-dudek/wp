@@ -2,7 +2,6 @@
   import Carousel from 'svelte-carousel';
 
   export let data;
-  console.log(data.images.length);
 </script>
 
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
