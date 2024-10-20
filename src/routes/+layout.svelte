@@ -10,7 +10,7 @@
   <div class="navbar">
     <div class="navbar-start">
       <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="Menu button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -54,13 +54,7 @@
         </ul>
       </div>
       <a class="btn btn-ghost" href="/">
-        <img
-          src="/favicon-48x48.png"
-          width="46"
-          height="46"
-          class="h-full"
-          alt="Wojciech Patro logo"
-        />
+        <img src="/logo-80.webp" width="80" height="80" class="h-full" alt="Wojciech Patro logo" />
         <div>
           <p class="text-2xl gap-0 leading-5 text-bold">Wojciech Patro</p>
         </div>
