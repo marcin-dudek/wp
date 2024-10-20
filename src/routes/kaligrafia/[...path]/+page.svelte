@@ -4,6 +4,11 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>Kaligrafia</title>
+  <meta name="description" content="Książki pisane kaligrafią przez Wojciecha Patro." />
+</svelte:head>
+
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
   <h3 class="mb-4 text-4xl tracking-tight font-extrabold">{data.title}</h3>
 

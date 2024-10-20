@@ -33,9 +33,49 @@ export const load = ({ url }) => {
       '/pan-tadeusz-1/pt9.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/as-you-like-it") { title = "As You Like It"; }
-  else if (pathname === "/kaligrafia/sonnets") { title = "Sonnets"; }
-  else if (pathname === "/kaligrafia/tryptyk") { title = "Tryptyk"; }
+  else if (pathname === "/kaligrafia/as-you-like-it") {
+    title = "As You Like It";
+    images = [
+      '/as-you-like-it/s01.webp',
+      '/as-you-like-it/s02.webp',
+      '/as-you-like-it/s03.webp',
+      '/as-you-like-it/s04.webp',
+      '/as-you-like-it/s05.webp',
+      '/as-you-like-it/s06.webp',
+      '/as-you-like-it/s07.webp',
+    ];
+  }
+  else if (pathname === "/kaligrafia/sonnets") {
+    title = "Sonnets";
+    images = [
+      '/sonnets/s01.webp',
+      '/sonnets/s02.webp',
+      '/sonnets/s03.webp',
+      '/sonnets/s04.webp',
+      '/sonnets/s05.webp',
+      '/sonnets/s06.webp',
+    ];
+  }
+  else if (pathname === "/kaligrafia/tryptyk") {
+    title = "Tryptyk";
+    images = [
+      '/tryptyk/t01.webp',
+      '/tryptyk/t02.webp',
+      '/tryptyk/t03.webp',
+      '/tryptyk/t04.webp',
+      '/tryptyk/t05.webp',
+      '/tryptyk/t06.webp',
+      '/tryptyk/t07.webp',
+      '/tryptyk/t08.webp',
+      '/tryptyk/t09.webp',
+      '/tryptyk/t10.webp',
+      '/tryptyk/t11.webp',
+      '/tryptyk/t12.webp',
+      '/tryptyk/t13.webp',
+      '/tryptyk/t14.webp',
+      '/tryptyk/t15.webp',
+    ];
+  }
   else if (pathname === "/kaligrafia/nowy-testament") { title = "Pismo Święte Nowego Testamentu"; }
 
   return {

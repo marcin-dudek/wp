@@ -23,6 +23,11 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Akwarela</title>
+  <meta name="description" content="Obrazy malowane akwarelą przez Wojciecha Patro." />
+</svelte:head>
+
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
   <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Akwarela</h3>
 
