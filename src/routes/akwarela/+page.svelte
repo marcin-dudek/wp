@@ -1,34 +1,32 @@
 <script>
-  import { page } from '$app/stores';
+  import Carousel from 'svelte-carousel';
 
   let files = [
-    '/img_a/w101.webp',
-    '/img_a/w102.webp',
-    '/img_a/w103.webp',
-    '/img_a/w105.webp',
-    '/img_a/w106.webp',
-    '/img_a/w107.webp',
-    '/img_a/w108.webp',
-    '/img_a/w109.webp',
-    '/img_a/w110.webp',
-    '/img_a/w111.webp',
-    '/img_a/w112.webp',
-    '/img_a/w113.webp',
-    '/img_a/w114.webp',
-    '/img_a/w115.webp',
-    '/img_a/w116.webp',
-    '/img_a/w117.webp',
-    '/img_a/w118.webp',
-    '/img_a/w119.webp'
+    '/akwarela/w101.webp',
+    '/akwarela/w102.webp',
+    '/akwarela/w103.webp',
+    '/akwarela/w105.webp',
+    '/akwarela/w106.webp',
+    '/akwarela/w107.webp',
+    '/akwarela/w108.webp',
+    '/akwarela/w109.webp',
+    '/akwarela/w110.webp',
+    '/akwarela/w111.webp',
+    '/akwarela/w112.webp',
+    '/akwarela/w113.webp',
+    '/akwarela/w114.webp',
+    '/akwarela/w115.webp',
+    '/akwarela/w116.webp',
+    '/akwarela/w117.webp',
+    '/akwarela/w118.webp',
+    '/akwarela/w119.webp'
   ];
-
-  $: image = $page.url.hash;
 </script>
 
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
   <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Akwarela</h3>
 
-  <div class="carousel carousel-center rounded-box">
+  <Carousel autoplay autoplayDuration={5000}>
     {#each files as file, i}
       <div id={(i + 1).toString()} class="carousel-item w-full">
         {#if i == 0}
@@ -38,15 +36,5 @@
         {/if}
       </div>
     {/each}
-  </div>
-
-  <div class="justify-center flex flex-wrap gap-2">
-    {#each files as file, i}
-      <a
-        href="#{i + 1}"
-        class="btn btn-xs {image === `#${i + 1}` || (image === '' && i === 0) ? 'btn-active' : ''}"
-        >{i + 1}
-      </a>
-    {/each}
-  </div>
+  </Carousel>
 </div>

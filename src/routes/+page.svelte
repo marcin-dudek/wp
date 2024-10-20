@@ -6,6 +6,6 @@
 <div class="flex flex-col">
   <h1 class="text-5xl font-bold mx-auto py-6">Wojciech Patro</h1>
   <div class="py-6 w-full">
-    <img class="mx-auto" src="/main.webp" alt="akwarela nr 1" />
+    <img class="mx-auto" src="/main.webp" width="700" height="700" alt="akwarela nr 1" />
   </div>
 </div>

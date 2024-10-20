@@ -6,16 +6,16 @@ export const load = ({ url }) => {
   if (pathname === "/kaligrafia/pan-tadeusz-2") {
     title = "Pan Tadeusz";
     images = [
-      '/img_a/w106.webp',
-      '/img_a/w107.webp',
-      '/img_a/w108.webp'
+      '/akwarela/w106.webp',
+      '/akwarela/w107.webp',
+      '/akwarela/w108.webp'
     ];
   } else if (pathname === "/kaligrafia/pan-tadeusz") {
     title = "Pan Tadeusz";
     images = [
-      '/img_a/w109.webp',
-      '/img_a/w103.webp',
-      '/img_a/w108.webp'
+      '/akwarela/w109.webp',
+      '/akwarela/w103.webp',
+      '/akwarela/w108.webp'
     ];
   }
   else if (pathname === "/kaligrafia/as-you-like-it") { title = "As You Like It"; }
