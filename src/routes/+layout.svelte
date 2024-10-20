@@ -54,7 +54,7 @@
         </ul>
       </div>
       <a class="btn btn-ghost" href="/">
-        <img src="/logo-80.webp" width="80" height="80" class="h-full" alt="Wojciech Patro logo" />
+        <img src="/logo-80.webp" width="40" height="60" class="h-full" alt="Wojciech Patro logo" />
         <div>
           <p class="text-2xl gap-0 leading-5 text-bold">Wojciech Patro</p>
         </div>

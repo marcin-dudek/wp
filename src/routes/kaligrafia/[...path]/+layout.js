@@ -76,7 +76,10 @@ export const load = ({ url }) => {
       '/tryptyk/t15.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/nowy-testament") { title = "Pismo Święte Nowego Testamentu"; }
+  else if (pathname === "/kaligrafia/nowy-testament") {
+    title = "Pismo Święte Nowego Testamentu";
+    images = [];
+  }
 
   return {
     pathname,
