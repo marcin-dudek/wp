@@ -57,7 +57,7 @@ export const load = ({ url }) => {
     ];
   }
   else if (pathname === "/calligraphy/tryptych") {
-    title = "Tryptyk";
+    title = "Tryptych";
     images = [
       '/tryptyk/t01.webp',
       '/tryptyk/t02.webp',
