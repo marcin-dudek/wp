@@ -1,0 +1,24 @@
+{
+  "title": {
+    "contact": "Contact",
+    "watercolor": "Watercolor",
+    "calligraphy": "Calligraphy",
+    "sonnets": "Sonnets",
+    "pt": "Pan Tadeusz",
+    "pt2": "Pan Tadeusz (version 2)",
+    "nt": "New Testament",
+    "asyoulikeit": "As You Like It",
+    "tryptych": "Tryptych"
+  },
+  "url": {
+    "contact": "/contact",
+    "watercolor": "/watercolor",
+    "calligraphy": "/calligraphy",
+    "sonnets": "/calligraphy/sonnets",
+    "pt": "/calligraphy/pan-tadeusz",
+    "pt2": "/calligraphy/pan-tadeusz-2",
+    "nt": "/calligraphy/new-testament",
+    "asyoulikeit": "/calligraphy/as-you-like-it",
+    "tryptych": "/calligraphy/tryptych"
+  }
+}

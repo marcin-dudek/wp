@@ -3,7 +3,7 @@ export const load = ({ url }) => {
   const { pathname } = url;
   let images = [];
   let title = "";
-  if (pathname === "/kaligrafia/pan-tadeusz-2") {
+  if (pathname === "/calligraphy/pan-tadeusz-2") {
     title = "Pan Tadeusz";
     images = [
       '/pan-tadeusz-2/pt01.webp',
@@ -19,7 +19,7 @@ export const load = ({ url }) => {
       '/pan-tadeusz-2/pt11.webp',
       '/pan-tadeusz-2/pt12.webp',
     ];
-  } else if (pathname === "/kaligrafia/pan-tadeusz") {
+  } else if (pathname === "/calligraphy/pan-tadeusz") {
     title = "Pan Tadeusz";
     images = [
       '/pan-tadeusz-1/pt1.webp',
@@ -33,7 +33,7 @@ export const load = ({ url }) => {
       '/pan-tadeusz-1/pt9.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/as-you-like-it") {
+  else if (pathname === "/calligraphy/as-you-like-it") {
     title = "As You Like It";
     images = [
       '/as-you-like-it/s01.webp',
@@ -45,7 +45,7 @@ export const load = ({ url }) => {
       '/as-you-like-it/s07.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/sonety") {
+  else if (pathname === "/calligraphy/sonnets") {
     title = "Sonnets";
     images = [
       '/sonnets/s01.webp',
@@ -56,7 +56,7 @@ export const load = ({ url }) => {
       '/sonnets/s06.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/tryptyk") {
+  else if (pathname === "/calligraphy/tryptych") {
     title = "Tryptyk";
     images = [
       '/tryptyk/t01.webp',
@@ -76,8 +76,8 @@ export const load = ({ url }) => {
       '/tryptyk/t15.webp',
     ];
   }
-  else if (pathname === "/kaligrafia/nowy-testament") {
-    title = "Nowy Testament";
+  else if (pathname === "/calligraphy/new-testament") {
+    title = "New Testament";
     images = [];
   }
 

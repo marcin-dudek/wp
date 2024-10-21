@@ -1,0 +1,24 @@
+{
+  "title": {
+    "contact": "Kontakt",
+    "watercolor": "Akwarela",
+    "calligraphy": "Kaligrafia",
+    "sonnets": "Sonety",
+    "pt": "Pan Tadeusz",
+    "pt2": "Pan Tadeusz (wersja 2)",
+    "nt": "Nowy Testament",
+    "asyoulikeit": "As You Like It",
+    "tryptych": "Tryptyk"
+  },
+  "url": {
+    "contact": "/kontakt",
+    "watercolor": "/akwarela",
+    "calligraphy": "/kaligrafia",
+    "sonnets": "/kaligrafia/sonety",
+    "pt": "/kaligrafia/pan-tadeusz",
+    "pt2": "/kaligrafia/pan-tadeusz-2",
+    "nt": "/kaligrafia/nowy-testament",
+    "asyoulikeit": "/kaligrafia/as-you-like-it",
+    "tryptych": "/kaligrafia/tryptyk"
+  }
+}
