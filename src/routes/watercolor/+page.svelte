@@ -1,5 +1,5 @@
 <script>
-  import Carousel from 'svelte-carousel';
+  import Carousel from '$lib/Carousel.svelte';
 
   let files = [
     '/akwarela/w101.webp',
@@ -28,18 +28,4 @@
   <meta name="description" content="Paintings painted with watercolors by Wojciech Patro." />
 </svelte:head>
 
-<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-  <h3 class="mb-4 text-4xl tracking-tight font-extrabold">Watercolor</h3>
-
-  <Carousel autoplay autoplayDuration={5000}>
-    {#each files as file, i}
-      <div id={(i + 1).toString()} class="carousel-item w-full">
-        {#if i == 0}
-          <img class="mx-auto" src={file} alt="Watercolor no {i}" />
-        {:else}
-          <img class="mx-auto" loading="lazy" src={file} alt="Watercolor no {i}" />
-        {/if}
-      </div>
-    {/each}
-  </Carousel>
-</div>
+<Carousel title="Watercolor" bind:images={files} />

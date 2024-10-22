@@ -6,9 +6,6 @@ export default defineConfig({
   build: {
     target: 'es2017',
   },
-  optimizeDeps: {
-    include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
-  },
   plugins: [
     sveltekit(),
     visualizer({
