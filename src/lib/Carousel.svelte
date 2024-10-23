@@ -1,7 +1,7 @@
 <script>
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
-  import { onDestroy, onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
   $: current = $page.url.hash === '' ? 1 : Number($page.url.hash.substring(1));
 
@@ -9,7 +9,9 @@
   let interval;
 
   const changeImage = () => {
-    goto(`#${(current % images.length) + 1}`);
+    if (images.length > 0) {
+      goto(`#${(current % images.length) + 1}`);
+    }
   };
 
   const handleClick = () => {
@@ -23,7 +25,9 @@
     return () => clearInterval(interval);
   });
 
+  /** @type {Array.<string>} */
   export let images;
+  /** @type {string} */
   export let title;
 </script>
 
