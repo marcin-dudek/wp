@@ -50,21 +50,21 @@
 
     if (!isFormValid) {
       validate = true;
-      showToast(
-        'Can you please check provided data, looks like something is not as it should.',
-        'warning'
-      );
+      showToast('Mail wygląda na niepoprawny. Proszę sprawdź.', 'warning');
       return;
     }
 
     let ok = await sendEmail(inputs.name, inputs.email, inputs.content);
 
     if (!ok) {
-      showToast('Oh! No! There was an issue with sending an email, please try again.', 'warning');
+      showToast(
+        'Oooo. Pojawił się problem podczas wysłania maila. Spróbuj jeszcze raz.',
+        'warning'
+      );
       return;
     }
 
-    showToast('Message has been sent. We will get back to you within 3 business days.', 'success');
+    showToast('Wiadomość została wysłana. Skontaktuje się w przeciągu 3 dni roboczych.', 'success');
     inputs = {
       name: '',
       email: '',
@@ -94,10 +94,7 @@
 
 <svelte:head>
   <title>Kontakt</title>
-  <meta
-    name="description"
-    content="You can price decors here, specify material and dimensions. Or you can contact us for more information."
-  />
+  <meta name="description" content="Formularz kontaktowy" />
 </svelte:head>
 
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
