@@ -9,4 +9,4 @@
   <meta name="description" content="Books written in calligraphy by Wojciech Patro." />
 </svelte:head>
 
-<Carousel bind:title={data.title} bind:images={data.images} />
+<Carousel title={data.title} images={data.images} />

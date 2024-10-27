@@ -1,9 +1,9 @@
-<script>
+<script lang="js">
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
 
-  $: current = $page.url.hash === '' ? 1 : Number($page.url.hash.substring(1));
+  let current = $derived($page.url.hash === '' ? 1 : Number($page.url.hash.substring(1)));
 
   /** @type {NodeJS.Timeout} */
   let interval;
@@ -25,10 +25,7 @@
     return () => clearInterval(interval);
   });
 
-  /** @type {Array.<string>} */
-  export let images;
-  /** @type {string} */
-  export let title;
+  let { /** @type {Array.<string>} */ images, /** @type {string} */ title } = $props();
 </script>
 
 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -51,7 +48,7 @@
       <a
         href="#{i + 1}"
         class="btn btn-xs {current === i + 1 ? 'btn-active' : ''}"
-        on:click={handleClick}
+        onclick={handleClick}
         >{i + 1}
       </a>
     {/each}
