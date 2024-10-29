@@ -28,4 +28,4 @@
   <meta name="description" content="Paintings painted with watercolors by Wojciech Patro." />
 </svelte:head>
 
-<Carousel title="Watercolor" bind:images={files} />
+<Carousel title="Watercolor" images={files} />

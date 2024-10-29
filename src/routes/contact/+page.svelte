@@ -1,4 +1,4 @@
-<script type="js">
+<script>
   import { onMount } from 'svelte';
   import sendEmail from '$lib/email';
 

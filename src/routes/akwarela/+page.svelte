@@ -28,4 +28,4 @@
   <meta name="description" content="Obrazy malowane akwarelą przez Wojciecha Patro." />
 </svelte:head>
 
-<Carousel title="Akwarela" bind:images={files} />
+<Carousel title="Akwarela" images={files} />

@@ -4,9 +4,9 @@
   import { cubicIn, cubicOut } from 'svelte/easing';
   import { _, locale, dictionary } from 'svelte-i18n';
   import { goto } from '$app/navigation';
-  export let data;
+  let { children, data } = $props();
 
-  $: isPolish = $locale === 'pl';
+  let isPolish = $derived($locale === 'pl');
 
   const changeLanguage = (e) => {
     let old = $locale;
@@ -56,7 +56,7 @@
             />
           </svg>
         </div>
-        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
         <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] w-80 shadow">
           <li><a href={$_('url.watercolor')}>{$_('title.watercolor')}</a></li>
           <li>
@@ -103,7 +103,7 @@
         <li><a href={$_('url.watercolor')}>{$_('title.watercolor')}</a></li>
         <li class="dropdown dropdown-hover">
           <div tabindex="0" role="button">{$_('title.calligraphy')}</div>
-          <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+          <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
           <ul tabindex="0" class="dropdown-content menu bg-base-300 rounded-box z-[1] shadow w-80">
             <li>
               <h2 class="menu-title">A. Mickiewicz</h2>
@@ -135,19 +135,8 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <!-- <label class="flex cursor-pointer gap-2">
-        EN
-        <input
-          type="checkbox"
-          bind:checked={isPolish}
-          class="toggle"
-          on:change={changeLanguage}
-          aria-label="Language switcher"
-        />
-        PL
-      </label> -->
       <label class="btn btn-ghost swap swap-rotate">
-        <input type="checkbox" bind:checked={isPolish} on:change={changeLanguage} />
+        <input type="checkbox" checked={isPolish} onchange={changeLanguage} />
         <div class="swap-on">PL</div>
         <div class="swap-off">EN</div>
       </label>
@@ -160,7 +149,7 @@
       in:fly={{ easing: cubicOut, y: 10, duration: 200, delay: 300 }}
       out:fly={{ easing: cubicIn, y: -10, duration: 200 }}
     >
-      <slot />
+      {@render children?.()}
     </div>
   {/key}
 

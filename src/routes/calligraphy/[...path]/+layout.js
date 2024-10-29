@@ -1,6 +1,8 @@
 // src/routes/+layout.js
 export const load = ({ url }) => {
   const { pathname } = url;
+
+  /** @type {Array.<string>} */
   let images = [];
   let title = "";
   if (pathname === "/calligraphy/pan-tadeusz-2") {
